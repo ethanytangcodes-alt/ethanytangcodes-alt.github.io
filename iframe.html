@@ -198,20 +198,7 @@ iframe {
             iframe.src = iframe.src;
         }
 
-        document.getElementById('whysofeinious-button').addEventListener('click', function() {
-            const script = document.createElement('script');
-            script.src = 'https://cdn.jsdelivr.net/npm/@widgetbot/crate@3';
-            script.async = true;
-            script.defer = true;
-            document.body.appendChild(script);
-
-            script.onload = function() {
-                new Crate({
-                    server: '1337108365591187640', 
-                    channel: '1345454451904745673' 
-                });
-            };
-        });
+        
 
         document.getElementById('openIframeSource').addEventListener('click', function() {
             var iframeSrc = document.getElementById('myIframe').src;
